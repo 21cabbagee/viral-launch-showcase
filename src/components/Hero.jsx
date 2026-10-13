@@ -34,7 +34,7 @@ export default function Hero({ onSelectStudy, onOpenCalculator }) {
             href="#case-studies"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white text-black font-semibold text-sm hover:bg-zinc-200 transition-colors shadow-sm"
           >
-            <span>Explore 8 Curated Case Studies</span>
+            <span>Explore 11 Curated Case Studies</span>
             <ArrowDown className="w-4 h-4" />
           </a>
           <button

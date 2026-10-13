@@ -82,6 +82,23 @@ export default function CaseStudyModal({ studyId, onClose, onOpenContact }) {
             </div>
           </div>
 
+          {/* Verified Business Impact Card */}
+          {study.businessImpact && (
+            <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/30 flex items-start gap-3">
+              <div className="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                <CheckCircle2 className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-400 font-bold block mb-0.5">
+                  VERIFIED BUSINESS & VENTURE IMPACT
+                </span>
+                <p className="text-sm text-emerald-100 font-sans leading-relaxed">
+                  {study.businessImpact}
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* Highlights & Evidence Strip */}
           {study.highlights && (
             <div className="bg-zinc-900/40 border border-white/[0.06] rounded-xl p-5">

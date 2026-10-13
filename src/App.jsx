@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import MetricsStrip from './components/MetricsStrip';
 import CaseStudiesDirectory from './components/CaseStudiesDirectory';
+import MethodologySection from './components/MethodologySection';
 import ReachCalculator from './components/ReachCalculator';
 import PlaybookSection from './components/PlaybookSection';
 import FAQSection from './components/FAQSection';
@@ -37,6 +38,8 @@ export default function App() {
         <CaseStudiesDirectory
           onSelectStudy={(id) => setActiveStudyId(id)}
         />
+
+        <MethodologySection />
 
         <ReachCalculator
           onOpenContact={() => setIsContactOpen(true)}

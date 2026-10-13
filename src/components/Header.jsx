@@ -27,7 +27,7 @@ export default function Header({ onOpenContact }) {
               Live Metrics Active
             </span>
             <span className="text-zinc-600">•</span>
-            <span className="text-zinc-400">8 Selected Studies</span>
+            <span className="text-zinc-400">11 Selected Studies</span>
             <span className="text-zinc-600">•</span>
             <span className="text-emerald-400/90 font-medium">Q4 Slots Open</span>
           </div>
@@ -36,6 +36,7 @@ export default function Header({ onOpenContact }) {
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 text-sm text-zinc-400">
           <a href="#case-studies" className="hover:text-white transition-colors">Case Studies</a>
+          <a href="#methodology" className="hover:text-white transition-colors">Methodology</a>
           <a href="#metrics" className="hover:text-white transition-colors">Metrics</a>
           <a href="#calculator" className="hover:text-white transition-colors">Reach Calculator</a>
           <a href="#playbook" className="hover:text-white transition-colors">Playbook</a>

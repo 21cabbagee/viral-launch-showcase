@@ -210,16 +210,24 @@ export default function CaseStudiesDirectory({ onSelectStudy }) {
                     )}
 
                     {/* Quick Metric Pills */}
-                    <div className="grid grid-cols-2 gap-2 text-xs font-mono pt-3 border-t border-white/[0.06] mb-4">
+                    <div className="grid grid-cols-2 gap-2 text-xs font-mono pt-3 border-t border-white/[0.06] mb-3">
                       <div className="bg-zinc-900/60 p-2 rounded border border-white/[0.04]">
                         <span className="text-zinc-500 block text-[10px]">TOTAL VIEWS</span>
                         <b className="text-white text-sm">{study.metrics.views}</b>
                       </div>
                       <div className="bg-zinc-900/60 p-2 rounded border border-white/[0.04]">
-                        <span className="text-zinc-500 block text-[10px]">BOOKMARKS</span>
-                        <b className="text-zinc-200 text-sm">{study.metrics.bookmarks || '750+'}</b>
+                        <span className="text-zinc-500 block text-[10px]">BOOKMARKS / QUOTES</span>
+                        <b className="text-zinc-200 text-sm">{study.metrics.bookmarks || (study.metrics.quotes ? `${study.metrics.quotes} Q` : '800+')}</b>
                       </div>
                     </div>
+
+                    {/* Business Impact Highlight */}
+                    {study.businessImpact && (
+                      <div className="mb-4 p-2.5 rounded-lg bg-emerald-950/20 border border-emerald-500/20 text-[11px] text-emerald-300 font-sans leading-normal">
+                        <span className="font-mono text-[9px] uppercase tracking-wider text-emerald-400 font-bold block mb-0.5">BUSINESS IMPACT</span>
+                        {study.businessImpact}
+                      </div>
+                    )}
 
                     {/* Tags & Action */}
                     <div className="flex items-center justify-between pt-1">
@@ -252,9 +260,10 @@ export default function CaseStudiesDirectory({ onSelectStudy }) {
                   <tr className="border-b border-white/[0.08] bg-black/60 font-mono text-zinc-400 uppercase text-[11px]">
                     <th className="py-3 px-4">Company & Campaign</th>
                     <th className="py-3 px-4">Stage</th>
+                    <th className="py-3 px-4 text-right">Starting Followers</th>
                     <th className="py-3 px-4 text-right">Views</th>
-                    <th className="py-3 px-4 text-right">Growth Multiplier</th>
-                    <th className="py-3 px-4">Key Conversion Metric</th>
+                    <th className="py-3 px-4 text-right">Multiplier</th>
+                    <th className="py-3 px-4">Verified Business Impact</th>
                     <th className="py-3 px-4 text-right">Action</th>
                   </tr>
                 </thead>
@@ -274,14 +283,17 @@ export default function CaseStudiesDirectory({ onSelectStudy }) {
                           {study.stage.replace(/-/g, ' ')}
                         </span>
                       </td>
+                      <td className="py-4 px-4 text-right whitespace-nowrap text-zinc-400">
+                        {study.metrics.startingFollowers ? study.metrics.startingFollowers.toLocaleString() : 'Existing Base'}
+                      </td>
                       <td className="py-4 px-4 text-right whitespace-nowrap text-white font-bold text-sm">
                         {study.metrics.views}
                       </td>
                       <td className="py-4 px-4 text-right whitespace-nowrap text-emerald-400 font-bold">
-                        {study.metrics.followerMultiplier || 'N/A'}
+                        {study.metrics.followerMultiplier || 'Multi-Launch'}
                       </td>
-                      <td className="py-4 px-4 text-zinc-300 text-xs font-sans">
-                        {study.metrics.conversion || study.metrics.benchmark || study.metrics.revenue}
+                      <td className="py-4 px-4 text-zinc-300 text-xs font-sans max-w-xs">
+                        {study.businessImpact || study.metrics.conversion}
                       </td>
                       <td className="py-4 px-4 text-right whitespace-nowrap">
                         <button className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-zinc-800 text-zinc-200 hover:bg-emerald-500 hover:text-black transition-colors text-xs font-sans">

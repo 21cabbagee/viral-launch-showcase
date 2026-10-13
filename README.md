@@ -27,8 +27,22 @@
 
 - **High-Contrast Dark Theme**: Deep `#09090b` canvas with rich zinc surfaces, subtle `#ffffff` borders, and electric emerald `#10b981` accents.
 - **Editorial Typography**: Inter / Geist Sans paired with tabular monospace numerals (Geist Mono / JetBrains Mono) for rigorous data density.
-- **Curated Dataset**: 8 verified launch case studies (TypeSafe AI, Tavus Griffin, Visko, Arceus Legal, Pine Computer, Bolt Forge, Synthetix, HyperKernel).
-- **Interactive Reach Calculator**: Real-time projection math estimating 48-hour view ceilings, creator node blast radius, and bookmark velocity based on company stage and starting followers.
+- **Curated Dataset**: 11 verified launch case studies directly matching the Doomers.ai directory:
+  - **TypeSafe AI (Jev)**: 1,500 followers → 40M views; 154K founder & 163K company followers; 150K signups in 24h; $100M revenue in 7 days (per Sequoia); $870M raised at $7.5B valuation (a16z led).
+  - **Tavus (Griffin)**: 11,500 followers → 21M views; 5.6K quote posts; 30K organic posts; grew to 43K followers in 24h.
+  - **Visko (Orbis 1.0)**: 20 followers → 1.4M views; grew to 1,800+ followers in 24h (90x); a16z inbound interest.
+  - **Arceus**: 600 followers → 2.1M views; 796 bookmarks; $17M round (8.5x Harvey's 248K annual benchmark).
+  - **Pine Computer**: 1,200 followers → 24.1M views; top-ranked hardware drop of the week on X.
+  - **Codos**: 1,800 followers → 1.6M views; 2,031 bookmarks reflecting enterprise buyer intent.
+  - **Nolla Health**: 2,300 followers → 2.5M views; 708 quotes; tested against 29 tracked healthtech drops.
+  - **Bolt.new (Bolt Forge)**: 2.2M views; 2,272 bookmarks; Bolt's most-viewed post of the year (6.2M weekly impressions).
+  - **Higgsfield**: 40M views across 6 launches; 1.8M engagements; 1.3M–1.9M views per release reach floor.
+  - **Wonderful**: 1,000 followers → 1.29M views; $550M funding announcement; grew to 4,371 followers in a week.
+  - **Odyssey (Odyssey-3)**: 42,801 followers → 2.3M views; 4th world model launch within network.
+- **Core Methodology & Benchmarks**:
+  - **Borrowed Audiences**: Seeding across 80–150+ creator nodes to launch accounts with sub-1,000 followers.
+  - **Reach vs. Endorsement**: Bookmarks and quote posts reflecting enterprise buying intent vs raw views.
+  - **Industry Benchmarks**: Median AI launch (730K views), Top-quartile (2M views), Doomers floor (1M–5M views), Peak outliers (20M–40.4M+ views).
 
 ---
 
